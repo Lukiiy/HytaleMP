@@ -6,9 +6,7 @@ import com.hypixel.hytale.event.EventRegistry;
 import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.event.events.entity.EntityEvent;
 import com.hypixel.hytale.server.core.event.events.player.PlayerChatEvent;
-import com.hypixel.hytale.server.core.event.events.player.PlayerMouseButtonEvent;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
@@ -40,9 +38,7 @@ public class HytaleMP extends JavaPlugin {
 
         EventRegistry registry = getEventRegistry();
 
-        registry.registerGlobal(PlayerReadyEvent.class, e -> {
-            e.getPlayer().sendMessage(Message.raw(CONFIG.get().getWelcome()));
-        });
+        registry.registerGlobal(PlayerReadyEvent.class, e -> e.getPlayer().sendMessage(Message.raw(CONFIG.get().getWelcome())));
 
         registry.registerGlobal(PlayerChatEvent.class, e -> { // TODO
             PlayerRef sender = e.getSender();

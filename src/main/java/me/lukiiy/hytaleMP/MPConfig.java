@@ -3,8 +3,6 @@ package me.lukiiy.hytaleMP;
 import com.hypixel.hytale.codec.Codec;
 import com.hypixel.hytale.codec.KeyedCodec;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
-import com.hypixel.hytale.server.core.HytaleServer;
-import com.hypixel.hytale.server.core.modules.singleplayer.commands.PlayOnlineCommand;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.Universe;
 
