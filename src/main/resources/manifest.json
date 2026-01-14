@@ -1,0 +1,17 @@
+{
+    "Group": "Lukiiy",
+    "Name": "HytaleMP",
+    "Version": "${version}",
+    "Description": "${description}",
+    "Authors": [
+        {
+            "Name": "Lukiiy"
+        }
+    ],
+    "Website": "https://github.com/Lukiiy/HytaleMP",
+    "Main": "${group}.HytaleMP",
+    "ServerVersion": "*",
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "DisabledByDefault": false
+}
